@@ -77,8 +77,9 @@ def restock (shoe_name, multiplier):
     return newInventory 
 # print(restock("Yeezy", 3))
 
-def clearance_sale (shoe_name, divide):
-    less_shoes = (shoe_inv[shoe_name] / divide)
+def clearance_sale (shoe_name, discount):
+    less_shoes = (shoe_inv[shoe_name] / discount)
     shoe_inv[shoe_name] = less_shoes
     return less_shoes
-print (clearance_sale("Yeezy", 2))
+# print (clearance_sale("Yeezy", 2))
+print(shoe_inv)
