@@ -27,6 +27,7 @@ def park():
     if response == "1":
         print("\nYou go through the gate and find a janitor that takes you to the exit and you find your family waiting for you.")
         game_over("Congratulations! You escaped the park!")
+        exit()
     elif response == "2":
         print("You continue down the path for all of eternity. You meet a few people along the way until you finally die of starvation.")
         game_over("Make better decisions next time!")
