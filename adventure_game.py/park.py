@@ -13,6 +13,9 @@ def park():
         print("\nYou fall into a pothole and die.")
         game_over("How could you mess this up? There were only two choices.")
         play_again()
+    else:
+        wrong_choice("You did not make an appropriate choice")
+        play_again()
 
     print("You continue moving forward and find a gate.")
     print("\nYou can go through the gate with the keys that you found (1), or you can move further down along the path(2). (1 or 2)")
@@ -28,6 +31,9 @@ def park():
         print("You continue down the path for all of eternity. You meet a few people along the way until you finally die of starvation.")
         game_over("Make better decisions next time!")
         play_again()
+    else:
+        wrong_choice("You did not make an appropriate choice")
+        play_again()
 
 def play_again():
     reply = input("\nDo you want to play again? Y/N")
@@ -39,5 +45,8 @@ def play_again():
 def game_over(reason):
     print("\n" + reason)
     print("Game Over!")
+
+def wrong_choice(meaning):
+    print("\n" + meaning)
 
 park()
